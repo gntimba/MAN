@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+ //   return view('viewAll');
+//});
 
-Route::get('/company/{id}', function ($id) {
-    return view('welcome');
-});
+Route::get('/','CompanyController@index') ;
+Route::get('/company','CompanyController@allcompany') ;
+

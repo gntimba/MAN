@@ -6,5 +6,13 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
-    //
+
+    public function index(){
+
+    return view('welcome');
+    }
+    public function allcompany(){
+
+        return view('viewAll');
+        }
 }
